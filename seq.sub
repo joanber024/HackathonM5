@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH -N 1 # number of nodes
+#SBATCH --exclusive
+#SBATCH --nodelist=clus10
+
+
+module add gcc/10.2.0
+
+gcc -Ofast main.c common.c layer.c -o main -lm
+
+perf stat ./main

@@ -1,0 +1,17 @@
+Fet la setmana 21/02/22:  
+- Hem creat el repositori fent servir de base el cas OpenMP de la Blanca
+- Hem generat/baixat i copiat els 3 datasets inicials
+
+Per la setmana 28/02/22:
+- Dissenyar entrada (opcions de la xarxa + dataset) (FET 23/03)
+- Actualitzar les funcions de càrrega
+- Netejar el programa de totes les directives OpenMP (FET 23/03)
+
+Fet setmana 21/03/22:
+- Hem implementat i provat els arxius config.c i config.h per llegir la configuració dissenyada
+- Hem pensat reestructurar el codi en els següents mòduls:
+    .- main (on tindrem la part que es pot paral·lelitzar [train, run])
+    .- config (on tenim les rutines per llegir i mostrar la configuració)
+    .- utils (on tindrem rutines útils arreu)
+    .- dataset (on tindrem les rutines per carregar i mostrar el training set i el validation set)
+    .- net-arch (on tindrem les rutines per crear l'estructura de la xarxa neuronal)
